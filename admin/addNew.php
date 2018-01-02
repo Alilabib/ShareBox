@@ -4,10 +4,10 @@
 ?>
 <?php
     if(isset($_POST['add-new'])){
+        
         $title  = $_POST['title' ];
         $author = $_POST['author'];
-        $active = $_POST['active'];
-
+        $active = $_POST['active']; 
         if(empty($title)||empty($author)){
             $errors[] = "All Fields Are requied";
         }else{
@@ -42,7 +42,7 @@
             <div class="control-group">
             <label class="control-label" for="textinput">Title</label>
             <div class="controls">
-                <input id="textinput" name="title" type="text" placeholder="Title" class="input-xlarge">
+                <input id="title" name="title" type="text" placeholder="Title" class="input-xlarge">
             </div>
             </div>
 
@@ -50,7 +50,7 @@
             <div class="control-group">
             <label class="control-label" for="textinput">Author</label>
             <div class="controls">
-                <input id="textinput-1" name="author" type="text" placeholder="Author" class="input-xlarge">
+                <input id="Author" name="author" type="text" placeholder="Author" class="input-xlarge">
             </div>
             </div>
 
@@ -58,7 +58,7 @@
             <div class="control-group">
             <label class="control-label" for="selectbasic-0">Select Basic</label>
             <div class="controls">
-                <select id="selectbasic-0" name="active" class="input-xlarge">
+                <select id="active" name="active" class="input-xlarge">
                 <option value="0">un Active</option>
                 <option value="1">Active</option>
                 </select>
@@ -69,7 +69,7 @@
             <div class="control-group">
             <label class="control-label" for="singlebutton">ADD</label>
             <div class="controls">
-                <button id="singlebutton" name="add-new" class="btn btn-primary">Button</button>
+                <button id="button" name="add-new" class="btn btn-primary">ADD</button>
             </div>
             </div>
 
@@ -77,7 +77,6 @@
             </form>
 
 </div>
-
 
 
 
